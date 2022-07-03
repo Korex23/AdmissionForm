@@ -52,83 +52,120 @@
         </div>
       </nav>
     </header>
-    <form class="container">
+    <form class="container needs-validation was-validated" novalidate="">
       <h1 class="text-center mt-5">Personal Information</h1>
       <div class="row mt-3">
         <div class="col-12 mt-3">
           <input
             type="text"
             name="courseName"
-            id="course"
+            id="course validationCustom01"
             placeholder="First Name"
             class="form-control"
+            required=""
           />
+
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Select a name</div>
         </div>
+
         <div class="col-12 mt-3">
           <input
             type="text"
             name="courseName"
-            id="course"
+            id="course validationCustom02"
             placeholder="Last Name"
             class="form-control"
+            required=""
           />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Select a name</div>
         </div>
         <div class="col-12 mt-3">
           <input
             type="text"
             name="courseName"
-            id="course"
+            id="course validationCustom02"
             placeholder="Middle Name"
             class="form-control"
+            required=""
           />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Select a name</div>
         </div>
         <div class="col-12 mt-3">
           <input
             type="email"
             name="courseName"
-            id="course"
+            id="course validationCustom03"
             placeholder="E-mail Address"
             class="form-control"
+            required=""
           />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Type a valid mail</div>
         </div>
         <div class="col-12 mt-3">
           <input
             type="tel"
             name="courseName"
-            id="course"
+            id="course validationCustom04"
             placeholder="Phone Number"
             class="form-control"
+            required=""
           />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Type a valid number</div>
         </div>
         <div class="col-12 mt-3">
           <input
             type="text"
             name="courseName"
-            id="course"
+            id="course validationCustom05"
             placeholder="Address"
             class="form-control"
+            required=""
           />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Type a valid address</div>
         </div>
         <div class="col-12 mt-3">
           <input
             type="text"
             name="courseName"
-            id="course"
+            id="course validationCustom06"
             placeholder="Alternate Address"
             class="form-control"
+            required=""
           />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Type a valid address</div>
         </div>
       </div>
 
       <h3 class="mt-5">Gender</h3>
       <div class="row">
         <div class="col-12">
-          <input type="radio" name="gender" id="" class="form-check-input" />
-          <label for="" class="form-check-label">Male</label>
+          <input
+            type="radio"
+            name="gender"
+            id="validationCustom07"
+            class="form-check-input"
+            required=""
+          />
+          <label for="validationCustom07" class="form-check-label">Male</label>
         </div>
         <div class="col-12">
-          <input type="radio" name="gender" id="" class="form-check-input" />
-          <label for="" class="form-check-label">Female</label>
+          <input
+            type="radio"
+            name="gender"
+            id="validationCustom07"
+            class="form-check-input"
+            required=""
+          />
+          <label for="validationCustom07" class="form-check-label"
+            >Female</label
+          >
         </div>
       </div>
 
@@ -138,16 +175,23 @@
           <input
             type="date"
             name=""
-            id=""
+            id="validationCustom08"
             class="form-control"
             placeholder="Date of Birth"
+            required=""
           />
         </div>
       </div>
       <div class="row mt-3">
         <div class="col-4">State of Origin</div>
         <div class="col-8">
-          <select name="grade" class="form-select">
+          <select
+            name="grade"
+            class="form-select"
+            id="validationCustom09"
+            required=""
+          >
+            <option selected="" disabled="" value="">Choose...</option>
             <option>ABUJA FCT</option>
             <option>ABIA</option>
             <option>ADAMAWA</option>
@@ -189,21 +233,31 @@
         </div>
       </div>
       <div class="form-group row mt-2">
-        <label for="Mail" class="col-sm-4 col-form-label">
+        <label for="validationCustom09" class="col-sm-4 col-form-label">
           LGA of Origin
         </label>
         <div class="col-sm-8">
           <input
-            type="email"
+            type="text"
             class="form-control"
             placeholder="LGA of Origin"
+            id="validationCustom09"
+            required=""
           />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Type a valid LGA</div>
         </div>
       </div>
       <div class="row mt-3">
         <div class="col-4">State of Birth</div>
         <div class="col-8">
-          <select name="grade" class="form-select">
+          <select
+            name="grade"
+            class="form-select"
+            id="validationCustom09"
+            required=""
+          >
+            <option selected="" disabled="" value="">Choose...</option>
             <option>ABUJA FCT</option>
             <option>ABIA</option>
             <option>ADAMAWA</option>
@@ -245,9 +299,19 @@
         </div>
       </div>
       <div class="form-group row mt-2">
-        <label for="Mail" class="col-sm-4 col-form-label"> LGA of Birth </label>
+        <label for="validationCustom09" class="col-sm-4 col-form-label">
+          LGA of Origin
+        </label>
         <div class="col-sm-8">
-          <input type="email" class="form-control" placeholder="LGA of Birth" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="LGA of Origin"
+            id="validationCustom09"
+            required=""
+          />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Type a valid LGA</div>
         </div>
       </div>
       <div class="d-grid gap-2 col-6 mx-auto mt-5 mb-5">
